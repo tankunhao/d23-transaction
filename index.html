@@ -4,15 +4,17 @@
 <script src="//www.squarefoot.com.sg/component/sqftapi?token=y5f3mjnakpow2xid4bscqzle7r08tvgu&task=js"></script>
 <script>
     $(document).ready(function(){
+                    // Load the first widget
         squarefoot.load("sqftmain1",{
             task: "project", name: "mi casa", type: "r", subtype: "abc", transaction: "1"
         });
-        $("#sqftmain").iFrameResize();
+        $("#sqftmain1").iFrameResize();
 
+                    // Load the second widget
         squarefoot.load("sqftmain2",{
             task: "project", name: "sol acres", type: "r", subtype: "abc", transaction: "1"
         });
-        $("#sqftmain").iFrameResize();
+        $("#sqftmain2").iFrameResize();
     });
 </script>
 <iframe id="sqftmain" style="background-color:#fcfcfc" frameborder="0" width="100%"></iframe>
