@@ -10,17 +10,35 @@
     <script src="//www.squarefoot.com.sg/component/sqftapi?token=y5f3mjnakpow2xid4bscqzle7r08tvgu&task=js"></script>
     <script>
         $(document).ready(function(){
-            // Load the first widget
+            // Load the first widget (Sol Acres)
             squarefoot.load("sqftmain1",{
-                task: "project", name: "mi casa", type: "r", subtype: "abc", transaction: "1"
+                task: "project", name: "sol acres", type: "r", subtype: "abc", transaction: "1"
             });
             $("#sqftmain1").iFrameResize();
 
-            // Load the second widget
+            // Load the second widget (Inz Residence)
             squarefoot.load("sqftmain2",{
-                task: "project", name: "sol acres", type: "r", subtype: "abc", transaction: "1"
+                task: "project", name: "inz residence", type: "r", subtype: "abc", transaction: "1"
             });
             $("#sqftmain2").iFrameResize();
+
+            // Load the third widget (Wandervale)
+            squarefoot.load("sqftmain3",{
+                task: "project", name: "wandervale", type: "r", subtype: "abc", transaction: "1"
+            });
+            $("#sqftmain3").iFrameResize();
+
+            // Load the fourth widget (The Rainforest)
+            squarefoot.load("sqftmain4",{
+                task: "project", name: "the rainforest", type: "r", subtype: "abc", transaction: "1"
+            });
+            $("#sqftmain4").iFrameResize();
+
+            // Load the fifth widget (Mi Casa)
+            squarefoot.load("sqftmain5",{
+                task: "project", name: "mi casa", type: "r", subtype: "abc", transaction: "1"
+            });
+            $("#sqftmain5").iFrameResize();
         });
     </script>
     <style>
@@ -33,5 +51,8 @@
 <body>
     <iframe id="sqftmain1" style="background-color:#fcfcfc" frameborder="0" width="100%"></iframe>
     <iframe id="sqftmain2" style="background-color:#fcfcfc" frameborder="0" width="100%"></iframe>
+    <iframe id="sqftmain3" style="background-color:#fcfcfc" frameborder="0" width="100%"></iframe>
+    <iframe id="sqftmain4" style="background-color:#fcfcfc" frameborder="0" width="100%"></iframe>
+    <iframe id="sqftmain5" style="background-color:#fcfcfc" frameborder="0" width="100%"></iframe>
 </body>
 </html>
